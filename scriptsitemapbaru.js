@@ -34,5 +34,5 @@ function show_post2(a){
     dw+='<li class="cat-'+i+'">';
     dw+='<a href="" onclick="show_post(\''+cat[i].term+'\',\'1\',\''+i+'\');return false" title="';dw+=cat[i].term;dw+='">';
     dw+=cat[i].term;dw+='</a>';dw+='</li>'
-  }dw+='</ul>';document.getElementById('show-cat').innerHTML=dw
+  }dw+='</ul>';document.getElementById('show-cat').innerHTML=dw;
 }document.write('<script type="text/javascript" src="'+cat_home+'/feeds/posts/default?alt=json-in-script&max-results=0&callback=show_cat"><\/script>');
