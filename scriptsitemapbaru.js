@@ -1,4 +1,4 @@
-var cat_home='http://www.bloggersstand.com';cat_numb=7;cat_pre='Prev';cat_nex='Next';
+var cat_numb=7;cat_pre='Prev';cat_nex='Next';
 var cat_name;var cat_start;var cat_class;
 function show_post2(a){
   var tt=a.feed.openSearch$totalResults.$t;dw='';dw+='<ul>';
@@ -36,4 +36,3 @@ function show_post2(a){
     dw+=cat[i].term;dw+='</a>';dw+='</li>'
   }dw+='</ul>';document.getElementById('show-cat').innerHTML=dw
 }
-document.write('<script type="text/javascript" src="'+cat_home+'/feeds/posts/default?alt=json-in-script&max-results=0&callback=show_cat"><\/script>');
