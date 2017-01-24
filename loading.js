@@ -16,4 +16,4 @@ function loadjscssfile(filename, filetype){
 document.getElementById('main').innerHTML += '<br/><div id="toc"></div>';
 loadjscssfile("//rawgit.com/eigoen/blogspot/master/scriptsitemapbaru.css", "css");
 loadjscssfile("//rawgit.com/eigoen/blogspot/master/scriptsitemapbaru.js", "js");
-loadjscssfile("inidulubaruitu.com/feeds/posts/default?max-results=9999&amp;alt=json-in-script&amp;callback=loadtoc", "js");
+loadjscssfile("//inidulubaruitu.com/feeds/posts/default?max-results=9999&amp;alt=json-in-script&amp;callback=loadtoc", "js");
