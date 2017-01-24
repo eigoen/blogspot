@@ -9,11 +9,9 @@ function show_post2(a){
     }dw+='<li>';dw+=(cat_start+i)+'. <a href="'+cat_url+'" rel="nofollow" title="'+cat_title+'">'+cat_title+'</a>';
     dw+='</li>'}dw+='</ul>';dw+='<div id="navi-cat">';
   if(cat_start>1){
-    dw+='<a href="" onclick="show_post(\''+cat_name+'\',\''+(cat_start-cat_numb)+'\',\''+cat_class+'\');
-    return false" title="'+cat_pre+'">'+cat_pre+'</a>'
+    dw+='<a href="" onclick="show_post(\''+cat_name+'\',\''+(cat_start-cat_numb)+'\',\''+cat_class+'\');return false" title="'+cat_pre+'">'+cat_pre+'</a>'
   }if((cat_start+cat_numb-1)<tt){
-    dw+='<a href="" onclick="show_post(\''+cat_name+'\',\''+(cat_start+cat_numb)+'\',\''+cat_class+'\');
-    return false" title="'+cat_nex+'">'+cat_nex+'</a>'
+    dw+='<a href="" onclick="show_post(\''+cat_name+'\',\''+(cat_start+cat_numb)+'\',\''+cat_class+'\');return false" title="'+cat_nex+'">'+cat_nex+'</a>'
   }dw+='<span>'+cat_start;
   if(cat_start!=tt){dw+=' &ndash; '+(cat_start+i-1)}
   dw+=' / '+tt+'</span>';
@@ -34,8 +32,7 @@ function show_post2(a){
     }
   }for(var i=0;i<cat.length;i++){
     dw+='<li class="cat-'+i+'">';
-    dw+='<a href="" onclick="show_post(\''+cat[i].term+'\',\'1\',\''+i+'\');
-    return false" title="';dw+=cat[i].term;dw+='">';
+    dw+='<a href="" onclick="show_post(\''+cat[i].term+'\',\'1\',\''+i+'\');return false" title="';dw+=cat[i].term;dw+='">';
     dw+=cat[i].term;dw+='</a>';dw+='</li>'
   }dw+='</ul>';document.getElementById('show-cat').innerHTML=dw
 }
