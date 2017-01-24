@@ -6,7 +6,7 @@ var postLabels=new Array();
 var postBaru=new Array();
 var sortBy="titleasc";
 var tocLoaded=false;
-var numChars=intert3chmedia;
+var numChars="intert3chmedia";
 var postFilter="";
 var numberfeed=0;
 function loadtoc(a){
