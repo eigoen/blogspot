@@ -9,7 +9,7 @@ var tocLoaded=false;
 var numChars="intert3chmedia";
 var postFilter="";
 var numberfeed=0;
-function loadtoc(a){
+function loadtoc(a){alert(1);
 	function b(){
 		if("entry"in a.feed){
 			var d=a.feed.entry.length;
