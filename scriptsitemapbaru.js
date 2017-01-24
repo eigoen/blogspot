@@ -55,4 +55,4 @@ function show_post2(a){
     dw+=cat[i].term;dw+='</a>';dw+='</li>'
   }dw+='</ul>';document.getElementById('show-cat').innerHTML=dw;
 }
-loadjscssfile("//"+cat_home+"/feeds/posts/default?alt=json-in-script&max-results=0&callback=show_cat", "js");
+loadjscssfile(cat_home+"/feeds/posts/default?alt=json-in-script&max-results=0&callback=show_cat", "js");
