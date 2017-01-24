@@ -64,7 +64,7 @@ function loadtoc(a){
 	sortPosts(sortBy);
 	sortlabel();
 	tocLoaded=true;
-	displayToc2();
+	displayToc();
 	document.write()
 }
 function filterPosts(a){
@@ -251,7 +251,6 @@ function displayToc(a){
 function displayToc2(){
 	var a=0;
 	var b=0;
-	alert(1);
 	while(b<postTitle.length){
 		temp1=postLabels[b];
 		document.write("<p/>");
