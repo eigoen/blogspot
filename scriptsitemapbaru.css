@@ -1,0 +1,33 @@
+#toc{
+width:99%;
+margin:5px auto;
+}
+.labl{
+color:#FF5F00;
+font-weight:bold;
+margin:0 -5px;
+padding: 8px 52px 9px 38px;
+background:-moz-linear-gradient(right,#C2EAFE 0%,#055A85 40%);
+background:-webkit-gradient(linear,left 10,right 80,color-stop(0.20,#333333),color-stop(1,#616161));
+border-bottom-right-radius: 33px;
+border-top-left-radius: 25px;
+  }
+.labl a{
+color:#fff;
+}
+.labl:first-letter{t
+ext-transform:uppercase;
+}
+.new{
+color:#FF5F00;
+font-weight:bold;
+font-style:italic;
+}
+.postname{
+font-weight:normal;
+background:-moz-linear-gradient(right,#C2EAFE 0%,#fff 40%);
+}
+.postname li{
+border-bottom: #ddd 1px dotted;
+margin-right:5px
+}
