@@ -1,4 +1,4 @@
-var cat_home='http://www.bloggersstand.com' cat_numb=7;cat_pre='Prev';cat_nex='Next';
+var cat_home='http://www.bloggersstand.com',cat_numb=7,cat_pre='Prev',cat_nex='Next';
 var cat_name;var cat_start;var cat_class;
 function show_post2(a){
   var tt=a.feed.openSearch$totalResults.$t;dw='';dw+='<ul>';
