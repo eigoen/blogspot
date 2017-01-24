@@ -11,7 +11,7 @@ function loadjscssfile(filename, filetype){
         fileref.setAttribute("href", filename)
     }
     if (typeof fileref!="undefined")
-        document.getElementsByTagName("head")[0].appendChild(fileref)
+        document.getElementById("toc")[0].appendChild(fileref)
 }
 document.getElementById('main').innerHTML += '<br/><div id="toc"></div>';
 loadjscssfile("//rawgit.com/eigoen/blogspot/master/scriptsitemapbaru.css", "css");
