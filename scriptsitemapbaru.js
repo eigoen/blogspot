@@ -37,11 +37,7 @@ function show_post2(a){
   dw+='</div>';
   document.getElementById('show-post').innerHTML=dw+'<style type="text/css">.cat-'+cat_class+' a{background:#bbb!important;color:#fff!important}<\/style>'
 }function show_post(a,b,c){
-  var d=document.getElementsByTagName('head')[0];
-  e=document.createElement('script');
-  e.type='text/javascript';
-  e.setAttribute('src',cat_home+'/feeds/posts/default/-/'+a+'?alt=json-in-script&start-index='+b+'&max-results='+cat_numb+'&callback=show_post2');
-  d.appendChild(e);
+  loadjscssfile(cat_home+'/feeds/posts/default/-/'+a+'?alt=json-in-script&start-index='+b+'&max-results='+cat_numb+'&callback=show_post2','js');
   cat_name=a;cat_start=parseInt(b),cat_class=c
 }function show_cat(a){
   var cat=a.feed.category;dw='';dw+='<ul>';
