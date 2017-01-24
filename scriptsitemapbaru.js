@@ -9,7 +9,7 @@ var tocLoaded=false;
 var numChars="intert3chmedia";
 var postFilter="";
 var numberfeed=0;
-function loadtoc(a){alert(1);
+function loadtoc(a){
 	function b(){
 		if("entry"in a.feed){
 			var d=a.feed.entry.length;
@@ -251,6 +251,7 @@ function displayToc(a){
 function displayToc2(){
 	var a=0;
 	var b=0;
+	alert(1);
 	while(b<postTitle.length){
 		temp1=postLabels[b];
 		document.write("<p/>");
