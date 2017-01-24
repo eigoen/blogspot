@@ -1,3 +1,22 @@
+function loadjscssfile(filename, filetype){
+    if (filetype=="js"){ //if filename is a external JavaScript file
+        var fileref=document.createElement('script')
+        fileref.setAttribute("type","text/javascript")
+        fileref.setAttribute("src", filename)
+    }
+    else if (filetype=="css"){ //if filename is an external CSS file
+        var fileref=document.createElement("link")
+        fileref.setAttribute("rel", "stylesheet")
+        fileref.setAttribute("type", "text/css")
+        fileref.setAttribute("href", filename)
+    }
+  if (typeof fileref!="undefined"){
+      if (filetype=="js"){document.getElementsByTagName("head")[0].appendChild(fileref)}
+      else{document.getElementsByTagName("head")[0].appendChild(fileref)}
+  }
+}
+document.getElementById('main').innerHTML = "<div id='show-cat'></div><div id='show-post'></div><div style='clear:both'></div>";
+loadjscssfile("//rawgit.com/eigoen/blogspot/master/scriptsitemapbaru.css", "css");
 var cat_home='http://www.bloggersstand.com',cat_numb=7,cat_pre='Prev',cat_nex='Next';
 var cat_name;var cat_start;var cat_class;
 function show_post2(a){
@@ -36,8 +55,4 @@ function show_post2(a){
     dw+=cat[i].term;dw+='</a>';dw+='</li>'
   }dw+='</ul>';document.getElementById('show-cat').innerHTML=dw;
 }
-var d=document.getElementsByTagName('head')[0];
-var e=document.createElement('script');
-  e.type='text/javascript';
-  e.setAttribute('src',cat_home+'/feeds/posts/default?alt=json-in-script&max-results=0&callback=show_cat');
-  d.appendChild(e);
+loadjscssfile("//"+cat_home+"/feeds/posts/default?alt=json-in-script&max-results=0&callback=show_cat", "js");
